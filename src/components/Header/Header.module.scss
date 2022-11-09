@@ -1,0 +1,60 @@
+@import "../../index.scss";
+
+.header {
+  height: 56px;
+  box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.2);
+  width: 100vw;
+  position: fixed;
+  background-color: white;
+  z-index: 2;
+
+  nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    max-width: 1440px;
+    margin: auto;
+    height: inherit;
+    img {
+      width: auto;
+      height: 30px;
+    }
+    a {
+      margin-left: 30px;
+      color: $primary;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+      &:last-child {
+        margin-left: auto;
+      }
+    }
+  }
+  .user_settings,
+  .user_settings_gradient{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 2;
+  }
+  .user_settings_gradient {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .user_settings {
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  
+}

@@ -1,0 +1,35 @@
+@import '../../index.scss';
+
+.button {
+  box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0;
+  border: none;
+  color: white;
+  background-color: $primary;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover,
+.button:active {
+  background-color: $primary-hover;
+}
+
+.button:hover ion-icon {
+  color: white;
+}
+
+.button:disabled,
+button[disabled]{
+  background-color: rgb(168, 168, 168);
+  cursor:default;
+}
+
+
